@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,18 +12,18 @@
 
     </header>
     <main>
-        <section class="input fields">
+        <section class="input_fields">
         <div>
             <input type="text" placeholder="Navn" title="Skriv navnet ditt her" id="input_name">
-            <button>Submit</button> 
+            <button onclick="updateName()">Submit</button> 
         </div>
         <div>
             <input type="number" placeholder="Alder" title="Skriv alderen din her" id="input_age">
-            <button>Submit</button>
+            <button onclick="updateAge()">Submit</button>
         </div>
-        <div>
-            <input type="color" title="velg favorit fargen din" id="input_color">
-            <button>Submit</button>
+        <div class="farge_velger">
+            <p>Velg en farge du ønsker</p>
+            <input type="color" title="velg favorit fargen din" id="input_color" value="#DDF2FD">
         </div>
     </section>
     <section class="results">
